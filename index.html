@@ -3,61 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Digitals | Premium Web Development</title>
+    <title>Nova Digitals | Hotel Web Development Specialists</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0a0c; color: #ffffff; }
-        .glow { text-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
-        .gradient-bg { background: linear-gradient(135deg, #1e1b4b 0%, #000000 100%); }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+        body { background-color: #020617; color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body>
-
-   <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto relative z-50">
-    <div class="text-2xl font-bold tracking-tighter text-purple-500">
-        <a href="index.html">NOVA <span class="text-white">DIGITALS</span></a>
-    </div>
-    <div class="space-x-8 hidden md:block">
-        <a href="services.html" class="hover:text-purple-400 transition">Services</a>
-        <a href="work.html" class="hover:text-purple-400 transition">Work</a>
-        <a href="contact.html" class="bg-purple-600 px-5 py-2 rounded-full hover:bg-purple-700 transition">Start a Project</a>
-    </div>
-</nav>
-
-    <section class="max-w-7xl mx-auto px-6 py-24 text-center">
-        <h1 class="text-6xl md:text-8xl font-black mb-6 glow">Explosive Digital <br><span class="text-purple-500">Growth.</span></h1>
-        <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-10">
-            We engineer high-performance web experiences that launch brands into the next dimension. Modern, scalable, and undeniably fast.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <button class="bg-white text-black font-bold py-4 px-10 rounded-lg hover:bg-gray-200 transition">View Our Work</button>
-            <button class="border border-gray-700 py-4 px-10 rounded-lg hover:border-purple-500 transition">Our Tech Stack</button>
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter uppercase">Nova <span class="text-indigo-500">Digitals</span></div>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+                <a href="index.html" class="text-indigo-400">Home</a>
+                <a href="services.html" class="hover:text-indigo-400 transition">Services</a>
+                <a href="work.html" class="hover:text-indigo-400 transition">Work</a>
+                <a href="#contact" class="bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Get a Quote</a>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="bg-[#111113] py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12">Our Expertise</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 border border-gray-800 rounded-2xl hover:border-purple-500/50 transition bg-black">
-                    <div class="text-purple-500 text-3xl mb-4">✦</div>
-                    <h3 class="text-xl font-bold mb-2">Web Architecture</h3>
-                    <p class="text-gray-400">Building scalable React and Next.js applications that handle heavy traffic with ease.</p>
-                </div>
-                <div class="p-8 border border-gray-800 rounded-2xl hover:border-purple-500/50 transition bg-black">
-                    <div class="text-purple-500 text-3xl mb-4">◈</div>
-                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
-                    <p class="text-gray-400">Creating interfaces that aren't just pretty, but are engineered for conversion.</p>
-                </div>
-                <div class="p-8 border border-gray-800 rounded-2xl hover:border-purple-500/50 transition bg-black">
-                    <div class="text-purple-500 text-3xl mb-4">⚙</div>
-                    <h3 class="text-xl font-bold mb-2">E-Commerce</h3>
-                    <p class="text-gray-400">Custom Shopify and Headless solutions designed to maximize your ROI.</p>
-                </div>
+    <header class="pt-48 pb-24 px-6 max-w-7xl mx-auto text-center">
+        <span class="inline-block px-4 py-1 border border-indigo-500/30 rounded-full text-[10px] font-bold text-indigo-400 uppercase tracking-[0.3em] mb-6">Hospitality Tech Agency</span>
+        <h1 class="text-5xl md:text-8xl font-extrabold mb-8 leading-tight">Fill Rooms. <br><span class="text-gradient">Ditch Commissions.</span></h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">We build high-performance websites for hotels. Move your guests away from third-party booking sites and into your own direct ecosystem.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#contact" class="bg-white text-black font-bold py-4 px-10 rounded-xl hover:bg-indigo-100 transition shadow-xl shadow-white/5">Start Your Project</a>
+            <a href="work.html" class="border border-slate-700 py-4 px-10 rounded-xl font-bold hover:bg-slate-800 transition">View Our Work</a>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="glass p-8 rounded-3xl">
+                <div class="text-indigo-500 mb-4 text-3xl">🏨</div>
+                <h3 class="text-xl font-bold mb-3">Direct Bookings</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Stop losing 20% to OTAs. We integrate booking engines directly into your site for maximum profit.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="text-indigo-500 mb-4 text-3xl">⚡</div>
+                <h3 class="text-xl font-bold mb-3">Ultra Fast Load</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Travelers book on the go. Our sites are optimized for mobile-first speed and instant navigation.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="text-indigo-500 mb-4 text-3xl">💎</div>
+                <h3 class="text-xl font-bold mb-3">Premium UX</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Luxury or budget, we design interfaces that showcase your property’s best features beautifully.</p>
             </div>
         </div>
     </section>
 
-</body>
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="glass p-8 md:p-16 rounded-[2rem]">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Let's Talk <span class="text-indigo-500 underline underline-offset-8">Property.</span></h2>
+                <p class="text-slate-400 italic">Tell us about your hotel and we'll provide a custom build quote.</p>
+            </div>
+            <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Hotel Name" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 focus:border-indigo-500 outline-none transition">
+                    <input type="email" placeholder="Contact Email" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 focus:border-indigo-500 outline-none transition">
+                </div>
+                <textarea rows="4" placeholder="How many rooms? Do you need a booking engine?" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-4 focus:border-indigo-500 outline-none transition"></textarea>
+                <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-500/20 transition uppercase tracking-widest text-sm">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
 
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-600 text-xs">
+        <p>© 2026 Nova Digitals. Specialized Web Systems for Hospitality.</p>
+    </footer>
+</body>
 </html>
