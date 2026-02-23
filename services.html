@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Nova Digitals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #050505; color: #ffffff; font-family: sans-serif; }
+        .nova-gradient { background: linear-gradient(90deg, #8b5cf6 0%, #d946ef 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <nav class="w-full z-50 bg-black/50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter"><a href="index.html">NOVA <span class="text-purple-500">DIGITALS</span></a></div>
+            <div class="space-x-8 text-sm uppercase tracking-widest">
+                <a href="index.html" class="hover:text-purple-400 transition">Home</a>
+                <a href="services.html" class="text-purple-500">Services</a>
+                <a href="work.html" class="hover:text-purple-400 transition">Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <h1 class="text-6xl font-black mb-4">Our <span class="nova-gradient">Expertise</span></h1>
+        <p class="text-gray-400 mb-16 max-w-xl">Deep tech solutions for modern brands.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white/5 p-10 rounded-3xl border border-white/10 hover:border-purple-500/50 transition">
+                <h3 class="text-2xl font-bold mb-4 text-purple-400">01. Web Architecture</h3>
+                <p class="text-gray-400 leading-relaxed">We build with the T3 stack, Next.js, and advanced React patterns to ensure your site stays up even under massive traffic spikes.</p>
+            </div>
+            <div class="bg-white/5 p-10 rounded-3xl border border-white/10 hover:border-purple-500/50 transition">
+                <h3 class="text-2xl font-bold mb-4 text-purple-400">02. Systems Design</h3>
+                <p class="text-gray-400 leading-relaxed">Infrastructure that scales. From AWS Lambda to high-speed database optimization, we handle the heavy lifting.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
